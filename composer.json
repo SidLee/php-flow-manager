@@ -1,0 +1,36 @@
+{
+    "name": "sidlee/flow-manager",
+    "type": "library",
+    "description": "Library to assist in the creation and management of complex wizard flows in projects using Symfony2's HttpFoundation component.",
+    "keywords": ["wizard", "flow", "request", "http-foundation"],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Moore",
+            "email": "amoore@sidlee.com"
+        },
+        {
+            "name": "Daniel Petitclerc",
+            "email": "dpetitclerc@sidlee.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "symfony/event-dispatcher": "~2.3",
+        "symfony/http-foundation": "~2.3",
+        "eloquent/enumeration": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SidLee\\FlowManager\\": "src/SidLee/FlowManager/",
+            "SidLee\\FlowManager\\Tests\\": "tests/SidLee/FlowManager/Tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
